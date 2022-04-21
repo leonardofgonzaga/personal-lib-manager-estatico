@@ -1,0 +1,159 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px; 
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/* Inicio Navbar */
+
+#header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem;
+    background: #72a5ae;
+    height: 60px;
+    align-items: center;
+}
+
+.lupa {
+    color: white;
+}
+
+#logo{
+    margin: auto 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    color: white;
+}
+
+#btn-mobile {    
+    display:flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border:none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburger {
+    border-top: 2px solid;
+    width: 25px;
+    color: white;
+}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+   }
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.menu {   
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background: white;
+    display: block;    
+    transition: 0.2s;
+    height: 0px;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-bottom: 5px solid #72a5ae;;
+}
+
+#nav.active .menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.menu a {
+    font-size: 1.3rem;
+    text-align: left;
+    text-decoration:none; 
+    padding:10px 0px; 
+    display:block;
+    margin: 0 1rem;
+    left: 20px; 
+    color: #72a5ae;
+}
+
+.menu ul a {
+    padding-left: 30px;
+    font-size: 1.2rem;
+}
+
+.menu li {
+    margin: 5px
+}
+
+.menu li a span {
+    position: absolute;
+    right: 20px;
+    transition: .3s;
+}
+
+.menu li a .seta-minha-biblioteca.girar {
+    transform: rotate(90deg);
+}
+
+.menu li a .seta-leituras.girar {
+    transform: rotate(90deg);
+}
+
+.menu ul {
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 0px;
+    transition: .3s;
+ } 
+
+.menu .itens-minha-biblioteca.mostra, .menu .itens-leituras.mostra  {
+    visibility: visible;
+    overflow-y: hidden;
+    height: 100px;
+    display: block;   
+}

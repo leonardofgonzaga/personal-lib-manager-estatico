@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Lib Manager</title>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+<body>
+    <!-- Inicio header -->
+    <header id="header">
+
+        <span class="material-icons lupa">search</span>
+
+        <a id="logo" href="">Personal Lib Manager</a>
+        
+        <nav id="nav">     
+            
+            <button id="btn-mobile">
+                <span id="hamburger"></span>
+            </button> 
+
+            <ul class="menu">
+                <li>
+                    <a href="#" class="minha-biblioteca item-menu">Minha Biblioteca
+                        <span class="material-icons seta-minha-biblioteca">arrow_right</span>
+                    </a>                    
+                    <ul class="itens-minha-biblioteca">
+                        <li><a href="#">Meus livros</a></li>
+                        <li><a href="#">Novo livro</a></li>
+                    </ul>                
+                </li>              
+                <li>
+                    <a href="#" class="leituras item-menu">Leituras
+                        <span class="material-icons seta-leituras">arrow_right</span>
+                    </a>
+                    <ul class="itens-leituras">
+                        <li><a href="#">Minhas leituras</a></li>
+                        <li><a href="#">Nova leitura</a></li>
+                    </ul>                    
+                </li>
+                <li><a class="item-menu" href="#">Citações</a></li>
+                <li><a class="item-menu" href="#">Autores</a></li>
+                <li><a class="item-menu" href="#">Editoras</a></li>                
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- Fim header -->
+
+    <script src="script.js"></script>
+</body>
+</html>
