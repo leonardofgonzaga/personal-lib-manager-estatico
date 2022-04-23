@@ -29,8 +29,9 @@ $('.leituras').click(function () {
     $('.menu li a .seta-leituras').toggleClass('girar')
 })
 
-
 // Mostrar barra de pesquisa
 $('.lupa').click(function () {
-    $('.barra-pesquisa').toggleClass('mostra')
+    $('.pesquisa').toggleClass('mostra')
+    $('.pesquisa button').toggleClass('mostra')
 })
+

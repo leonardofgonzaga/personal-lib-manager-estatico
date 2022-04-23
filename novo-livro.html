@@ -61,7 +61,8 @@
     <!-- Fim header -->
 
     <div class="pesquisa">
-        <input type="search" name="" class="barra-pesquisa"  placeholder="Digite aqui o título do livro...">
+        <input type="search" name="" id="pesquisa" class="barra-pesquisa"
+            placeholder="Digite aqui o título do livro...">
         <button type="submit">
             <span class="material-icons lupa-pesquisa">search</span>
         </button>
@@ -69,71 +70,76 @@
 
     <!-- Inicio coanteudo principal -->
     <div class="conteudo-principal">
-        <h3>Adicionados recentemente</h3>
-        <div class="cards">
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>
-
-            <div class="card">
-                <img class="cover" src="./src/covers/harry-potter.jpg" alt="image placeholder">
-                <div class="card-content">
-                    <h5>Harry Potter e a Pedra Filosofal</h5>
-                    <h6>J. K. Rowling</h6>
-                </div>                
-            </div>            
-
-        </div>
-
-        <div class="ver-mais">
-            <a href="meus-livros.html">Ver mais</a>
-        </div>
         
+        <div class="conteudo">            
+
+            <div class="form-background">
+
+                <div>
+                    <h3>Cadastrar Novo Livro</h3>
+                </div>
+
+                <form id="form-novo-livro" action="">
+
+                    <div>
+                        <img id="image-preview" src="src/covers/harry-potter.jpg" alt="" width="150px">              
+                        <input type="file" class="input-file" id="file" name="file" value="0.97">
+                    </div>
+                    
+                    <div>
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo">
+                    </div>
+
+                    <div>
+                        <label for="autor">Autor</label>
+                        <select name="" id="autor">
+                            <option value="">J. K Rowling</option>
+                            <option value="">Jordan B. Peterson</option>
+                            <option value="">Dan Brown</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="autor">Editora</label>
+                        <select name="" id="editora">
+                            <option value="">Rocco</option>
+                            <option value="">Íntrinseca</option>
+                            <option value="">Arqueiro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn">
+                    </div>
+                      
+                    <fieldset>
+                        <div>
+                            <label for="paginas">Páginas</label>
+                            <input type="text" id="paginas">
+                        </div>
+
+                        <div>
+                            <label for="Ano">Ano</label>
+                            <input type="text" id="ano">
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="edicao">Edição</label>
+                        <input type="text" id="edicao">
+                    </div>
+                    
+
+                    <button type="submit" id="btn-cadastrar-livro">Cadastrar</button>
+
+                </form>
+    
+            </div>  
+
+        </div>       
+              
 
     </div>
     <!-- Fim conteudo principal -->
