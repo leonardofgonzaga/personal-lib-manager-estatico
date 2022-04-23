@@ -303,14 +303,12 @@ fieldset {
 #form-novo-livro fieldset div {
     display: inline-block;
     margin: 0;
+    width: 47%;
 }
 
-#form-novo-livro div #paginas {
-    width: 80%;
-}
-
+#form-novo-livro div #paginas,
 #form-novo-livro div #ano {
-    width: 80%;
+    width: 90%;
 }
 
 /* Cards */
