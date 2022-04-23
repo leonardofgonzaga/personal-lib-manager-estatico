@@ -25,7 +25,7 @@ a {
     direction: ltr;
 }
 
-/* Inicio Navbar */
+/* Navbar */
 
 #header {
     box-sizing: border-box;
@@ -111,7 +111,7 @@ a {
 }
 
 #nav.active .menu {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 65px);
     visibility: visible;
     overflow-y: auto;
 }
@@ -183,7 +183,7 @@ a {
 
 .barra-pesquisa {
     z-index: 998;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     border: none;
     position: absolute;
     height: 0px;
@@ -198,7 +198,7 @@ a {
 }
 
 .barra-pesquisa.mostra {
-    height: 40px;
+    height: 50px;
     width: 100%;
 }
 
@@ -244,3 +244,35 @@ a {
     padding: 25px;
     font-weight: 600;
 }
+
+/* Footer */
+
+.footer-content {
+    background: black;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.content-card {
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+}
+
+.content-card i {
+    color: white;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.content-card h3 {
+    color: white;
+    padding: 5px;
+}
+
+.content-card p {
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
