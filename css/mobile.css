@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -15,7 +15,7 @@ a {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 30px; 
+    font-size: 30px;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -30,7 +30,7 @@ a {
 #header {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 1rem;
     background: #72a5ae;
     height: 60px;
@@ -41,7 +41,7 @@ a {
     color: white;
 }
 
-#logo{
+#logo {
     margin: auto 0;
     font-size: 1.2rem;
     font-weight: bold;
@@ -49,11 +49,13 @@ a {
     color: white;
 }
 
-#btn-mobile {    
-    display:flex;
+/* Botão hamburger */
+
+#btn-mobile {
+    display: flex;
     padding: .5rem 1rem;
     font-size: 1rem;
-    border:none;
+    border: none;
     background: none;
     cursor: pointer;
     gap: .5rem;
@@ -65,7 +67,8 @@ a {
     color: white;
 }
 
-#hamburger::after, #hamburger::before {
+#hamburger::after,
+#hamburger::before {
     content: '';
     display: block;
     width: 25px;
@@ -82,26 +85,29 @@ a {
 
 #nav.active #hamburger::before {
     transform: rotate(135deg);
-   }
+}
 
 #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
 }
 
-.menu {   
+/* Menu */
+
+.menu {
     position: absolute;
     width: 100%;
     top: 60px;
     right: 0px;
     background: white;
-    display: block;    
+    display: block;
     transition: 0.2s;
     height: 0px;
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
-    border-bottom: 5px solid #72a5ae;;
+    border-bottom: 5px solid #72a5ae;
+    ;
 }
 
 #nav.active .menu {
@@ -113,11 +119,11 @@ a {
 .menu a {
     font-size: 1.3rem;
     text-align: left;
-    text-decoration:none; 
-    padding:10px 0px; 
-    display:block;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: block;
     margin: 0 1rem;
-    left: 20px; 
+    left: 20px;
     color: #72a5ae;
 }
 
@@ -136,6 +142,8 @@ a {
     transition: .3s;
 }
 
+/* Setas menu */
+
 .menu li a .seta-minha-biblioteca.girar {
     transform: rotate(90deg);
 }
@@ -144,16 +152,95 @@ a {
     transform: rotate(90deg);
 }
 
+/* Ocultar e mostrar submenus */
+
 .menu ul {
     visibility: hidden;
     overflow-y: hidden;
     height: 0px;
     transition: .3s;
- } 
+}
 
-.menu .itens-minha-biblioteca.mostra, .menu .itens-leituras.mostra  {
+.menu .itens-minha-biblioteca.mostra,
+.menu .itens-leituras.mostra {
     visibility: visible;
     overflow-y: hidden;
     height: 100px;
-    display: block;   
+    display: block;
+}
+
+/* Barra pesquisa */
+
+.pesquisa button {
+    position: absolute;
+    border: none;
+    background: none;
+    color: white;
+    right: 5px;
+    margin: 5px;
+    z-index: 999;
+}
+
+.barra-pesquisa {
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    padding-left: 10px;
+    color: white;
+    transition: .3s;
+}
+
+.barra-pesquisa::placeholder {
+    color: white;
+}
+
+.barra-pesquisa.mostra {
+    height: 40px;
+    width: 100%;
+}
+
+/* Conteudo principal */
+
+.conteudo-principal h3 {
+    margin: 20px 20px 0 20px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-gap: 30px;
+    /* grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(auto-fit, 300px); */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ced4da;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    width: 150px;
+}
+
+.card-content {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card-content .titulo {
+    padding: 5px 0 5px 0px;
+}
+
+.ver-mais {
+    padding: 25px;
+    font-weight: 600;
 }

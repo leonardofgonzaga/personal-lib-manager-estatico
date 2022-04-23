@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
 </head>
+
 <body>
     <!-- Inicio header -->
     <header id="header">
@@ -19,23 +22,23 @@
         <span class="material-icons lupa">search</span>
 
         <a id="logo" href="">Personal Lib Manager</a>
-        
-        <nav id="nav">     
-            
+
+        <nav id="nav">
+
             <button id="btn-mobile">
                 <span id="hamburger"></span>
-            </button> 
+            </button>
 
             <ul class="menu">
                 <li>
                     <a href="#" class="minha-biblioteca item-menu">Minha Biblioteca
                         <span class="material-icons seta-minha-biblioteca">arrow_right</span>
-                    </a>                    
+                    </a>
                     <ul class="itens-minha-biblioteca">
                         <li><a href="#">Meus livros</a></li>
                         <li><a href="#">Novo livro</a></li>
-                    </ul>                
-                </li>              
+                    </ul>
+                </li>
                 <li>
                     <a href="#" class="leituras item-menu">Leituras
                         <span class="material-icons seta-leituras">arrow_right</span>
@@ -43,11 +46,11 @@
                     <ul class="itens-leituras">
                         <li><a href="#">Minhas leituras</a></li>
                         <li><a href="#">Nova leitura</a></li>
-                    </ul>                    
+                    </ul>
                 </li>
                 <li><a class="item-menu" href="#">Citações</a></li>
                 <li><a class="item-menu" href="#">Autores</a></li>
-                <li><a class="item-menu" href="#">Editoras</a></li>                
+                <li><a class="item-menu" href="#">Editoras</a></li>
             </ul>
 
         </nav>
@@ -55,6 +58,75 @@
     </header>
     <!-- Fim header -->
 
-    <script src="script.js"></script>
+    <div class="pesquisa">
+        <input type="search" name="" id="pesquisa" class="barra-pesquisa"
+            placeholder="Digite aqui o título do livro...">
+        <button type="submit">
+            <span class="material-icons lupa-pesquisa">search</span>
+        </button>
+    </div>
+
+    <!-- Inicio coanteudo principal -->
+    <div class="conteudo-principal">
+        <h3>Adicionados recentemente</h3>
+        <div class="cards">
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article> 
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article>   
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article>   
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article>    
+
+            <article class="card">
+                <img src="./src/covers/harry-potter.jpg" width="100%" alt="image placeholder">
+                <div class="card-content">
+                    <h4 class="titulo">Harry Potter e a Pedra Filosofal</h3>
+                    <h5 class="autor">J. K. Rowling</h5>
+                </div>
+            </article>  
+
+        </div>
+
+        <a class="ver-mais" href="#">Ver mais...</a>
+
+    </div>
+    <!-- Fim coanteudo principal -->
+
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
